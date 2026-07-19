@@ -106,7 +106,7 @@ def format_exception(msg, *args, **kwargs):
 
         try:
             1/0
-        except:
+        except ZeroDivisionError:
             raise ZeroDivisionError(
                 format_except('A divide by zero occurred in {filename} at '
                               'line {lineno} of function {func}.'))
